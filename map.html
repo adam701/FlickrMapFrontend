@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>explorr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,100italic,300italic,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.1/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/map.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places&sensor=false"> </script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false&amp;key=AIzaSyD3VSb2IYSKdPdcDWFffqh0pGy9S47Klzk"></script>
+    <script src="./assets/map.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <form id="flickr-map-form" name="flickr-map-form" method="post" action"#">
+        <div id="game">
+    <header>
+        <h1>explorr</h1>
+    </header>
+          <div id="game-score"><div id="game-score-wrapper">score: <span id="points">0</span></div></div>
+          <div id="flickr_img"><a id="image-link" href="http://www.flickr.com" target="_blank"><img id="flickr"/></a></div>
+          <div id="caption">Find where I am?</div>
+          <div id="map_canvas"></div>
+          <button class="pure-button" id="rank" name="rank">Rank</button>
+          <button class="pure-button" id="back" name="back">Back</button>
+          <input type="button" class="pure-button pure-button-primary" id="submit" name="submit" disabled="disable" value="verify">
+          <button class="pure-button" id="next" name="next">Next</button>
+        </div>
+        <div id="rank-board">
+          <h2>Ranking</h2>
+          <ul id="ranking">
+            <li>Shruthi Venkateswaran<span class="point">10</span></li>
+            <li>Alvin Feng<span class="point">57</span></li>
+            <li>Zhongtang Tian<span class="point">69</span></li>
+            <li>Chen Wang<span class="point">71</span></li>
+            <li>Tony Yang<span class="point">107</span></li>
+            <li>Ali Fayyad<span class="point">1006</span></li>
+            <li>Noah Katzman<span class="point">2098</span></li>
+            <li>Snehal Deshmukh<span class="point">6321</span></li>
+            <li>Marissa Mayer<span class="point">9001</span></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
